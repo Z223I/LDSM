@@ -1,15 +1,4 @@
-try:
-    from builtins import object
-except ImportError:
-    pass
-
-import warnings
-import sys
-
-
-from functools import partial
-from transitions import Machine, MachineError, State, EventData
-from transitions.core import listify, _prep_ordered_arg
+from transitions import Machine
 
 
 class LDSM():
@@ -39,3 +28,9 @@ class LDSM():
             print ( "2. Good" )
 
 
+
+
+if __name__ == "__main__":
+
+    m = LDSM()
+    m.test()
